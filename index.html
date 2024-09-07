@@ -1,87 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save The Date</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5efe3;
+        }
 
-	<title>Save the Date</title>
+        .card {
+            width: 400px;
+            height: 600px;
+            position: relative;
+            background-color: #f5efe3;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .card h1 {
+            font-size: 48px;
+            font-weight: normal;
+            color: #3e3e3e;
+            margin-top: 100px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            color: #3e3e3e;
+            margin-top: 20px;
+        }
+
+        .flowers {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://your-hosted-image-path/flower-pattern.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+            z-index: -1;
+        }
+    </style>
 </head>
-
 <body>
-
-	<div class="container">
-		<h1 class="save-date">Save the Date</h1>
-		<h2>October 2024</h2>
-
-		<div class="calendar">
-			<table>
-				<tr>
-					<th>Mon</th>
-					<th>Tue</th>
-					<th>Wed</th>
-					<th>Thu</th>
-					<th>Fri</th>
-					<th>Sat</th>
-					<th>Sun</th>
-				</tr>
-				<tr>
-					<td></td>
-					<td>1</td>
-					<td>2</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td class="highlight">6</td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
-					<td>10</td>
-					<td>11</td>
-					<td>12</td>
-					<td>13</td>
-				</tr>
-				<tr>
-					<td>14</td>
-					<td>15</td>
-					<td>16</td>
-					<td>17</td>
-					<td>18</td>
-					<td>19</td>
-					<td>20</td>
-				</tr>
-				<tr>
-					<td>21</td>
-					<td>22</td>
-					<td>23</td>
-					<td>24</td>
-					<td>25</td>
-					<td>26</td>
-					<td>27</td>
-				</tr>
-				<tr>
-					<td>28</td>
-					<td>29</td>
-					<td>30</td>
-					<td>31</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</table>
-		</div>
-
-		<div class="info">
-			<span>Meols Hall</span>
-			<span><strong>Julie and Shexon</strong></span>
-			<span>are getting married</span>
-			<span>Formal invitation to follow</span>
-		</div>
-	</div>
-
+    <div class="card">
+        <div class="flowers"></div>
+        <h1>Save The Date</h1>
+        <h3>20 . 03 . 2024</h3>
+    </div>
 </body>
-
 </html>
