@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vertical Image Scroll</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    body, html {
       margin: 0;
       padding: 0;
       height: 100vh;
-      overflow-x: hidden;
+      overflow-x: hidden; /* Disable side scrolling */
       scroll-behavior: smooth;
     }
 
@@ -42,15 +41,14 @@
 
     @media only screen and (max-width: 768px) {
       .slide img {
-        width: auto; /* Let the image stretch beyond container width */
-        height: 100vh; /* Ensure it still fills the height */
-        object-fit: none; /* Disable auto fitting, so it's cropped */
+        width: 100vw; /* Prevent image from extending beyond viewport width */
+        height: 100vh; /* Maintain full height */
+        object-fit: cover; /* Cropped, keeping only the center in view */
         object-position: center center; /* Focus on the center of the image */
       }
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <div class="slide">
