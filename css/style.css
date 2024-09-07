@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #dde6ed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.save-date {
+    font-size: 2.5em;
+    font-family: 'Brush Script MT', cursive;
+    color: #333;
+}
+
+.calendar {
+    margin: 20px 0;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #333;
+    color: #fff;
+}
+
+.calendar td {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.calendar .highlight {
+    background-color: #66cc66;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+.info {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.info span {
+    display: block;
+}
